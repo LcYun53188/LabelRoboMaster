@@ -102,7 +102,7 @@
     </font>
    </property>
    <property name="text">
-    <string>取消</string>
+    <string>Cancel</string>
    </property>
   </widget>
   <widget class="QPushButton" name="OKPushButton">

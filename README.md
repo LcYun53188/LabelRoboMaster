@@ -1,5 +1,6 @@
 **<div align=middle><p style="font-size: 2.7em;">LabelMaster指南 v1.0</p><div align=left>**
 <div align=right><p style="font-size: 1.3em;">南工骁鹰</p><div align=left>
+<div align=right><p style="font-size: 1.3em;">LcYun修改，UI改回英文以适配系统</p><div align=left>
 
 # 目录
 - [目录](#目录)

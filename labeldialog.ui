@@ -34,62 +34,62 @@
    </property>
    <item>
     <property name="text">
-     <string>哨兵</string>
+     <string>Sentinel</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>英雄</string>
+     <string>Hero</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>工程</string>
+     <string>Energy</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>3号步兵</string>
+     <string>Infantry3</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>4号步兵</string>
+     <string>Infantry4</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>5号步兵</string>
+     <string>Infantry5</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>前哨站</string>
+     <string>Outpost</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>基地小装甲</string>
+     <string>BaseSmall</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>基地大装甲</string>
+     <string>BaseLarge</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>3号平衡</string>
+     <string>InfantryB3</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>4号平衡</string>
+     <string>InfantryB4</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>5号平衡</string>
+     <string>InfantryB5</string>
     </property>
    </item>
   </widget>
@@ -108,7 +108,7 @@
     </font>
    </property>
    <property name="text">
-    <string>类别：</string>
+    <string>Class:</string>
    </property>
   </widget>
   <widget class="QLabel" name="color_label">
@@ -126,7 +126,7 @@
     </font>
    </property>
    <property name="text">
-    <string>颜色：</string>
+    <string>Color:</string>
    </property>
   </widget>
   <widget class="QComboBox" name="color_box">
@@ -145,22 +145,22 @@
    </property>
    <item>
     <property name="text">
-     <string>蓝色</string>
+     <string>Blue</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>红色</string>
+     <string>Red</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>熄灭</string>
+     <string>White</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>紫色</string>
+     <string>Purple</string>
     </property>
    </item>
   </widget>
@@ -179,7 +179,7 @@
     </font>
    </property>
    <property name="text">
-    <string>删除</string>
+    <string>Delete</string>
    </property>
   </widget>
   <widget class="QPushButton" name="cancelButton">
@@ -192,7 +192,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>取消</string>
+    <string>Cancel</string>
    </property>
   </widget>
   <widget class="QPushButton" name="saveButton">
@@ -205,7 +205,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>保存</string>
+    <string>Save</string>
    </property>
   </widget>
  </widget>
