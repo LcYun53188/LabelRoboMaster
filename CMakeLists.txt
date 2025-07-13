@@ -12,6 +12,7 @@ set(REQUIRED_LIBS_QUALIFIED Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Svg)
 
 find_package(Qt${QT_VERSION} COMPONENTS ${REQUIRED_LIBS} REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(OpenVINO REQUIRED)
 
 include_directories(.)
 
@@ -28,7 +29,7 @@ message("${src}")
 add_executable(${PROJECT_NAME} ${src} ${resource})
 
 target_link_libraries(${PROJECT_NAME} ${REQUIRED_LIBS_QUALIFIED})
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${OpenVINO_LIBRARIES})
 # 指定包的版本号
 set(_VERSION_MAJOR 0)
 set(_VERSION_MINOR 8)
