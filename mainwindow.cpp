@@ -4,6 +4,8 @@
 #include <QFileDialog>
 #include <QCoreApplication>
 #include <QMessageBox>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
 
 class IndexQListWidgetItem : public QListWidgetItem {
 public:
@@ -22,6 +24,28 @@ MainWindow::MainWindow(QWidget *parent, std::string path, int init_mode) :
         QMainWindow(parent),
         ui(new Ui::MainWindow) {
     ui->setupUi(this);
+
+    // Create the main horizontal layout
+    QHBoxLayout *mainLayout = new QHBoxLayout(ui->centralWidget);
+
+    // Create a container widget and a vertical layout for the right panel
+    QWidget *rightPanel = new QWidget;
+    QVBoxLayout *rightLayout = new QVBoxLayout(rightPanel);
+
+    // Add the right-side group boxes to the vertical layout
+    rightLayout->addWidget(ui->groupBox_2);
+    rightLayout->addWidget(ui->groupBox_3);
+
+    // Add the main widgets to the horizontal layout
+    mainLayout->addWidget(ui->groupBox);
+    mainLayout->addWidget(ui->label);
+    mainLayout->addWidget(rightPanel);
+
+    // Set the stretch factors
+    mainLayout->setStretch(0, 1);
+    mainLayout->setStretch(1, 5);
+    mainLayout->setStretch(2, 1);
+
     cdialog = new Configuredialog(&ui->label->configure, this);
     QObject::connect(ui->addLabelPushButton, &QPushButton::clicked, ui->label, &DrawOnPic::setAddingMode);
     QObject::connect(ui->savePushButton, &QPushButton::clicked, ui->label, &DrawOnPic::saveLabel);
