@@ -1,10 +1,21 @@
 #include "mainwindow.h"
 #include <QApplication>
+#include <QFile> // Required for QFile
+#include <QTextStream> // Required for QTextStream
 
 int main(int argc, char *argv[]) {
     QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     QApplication a(argc, argv);
+
+    // Load and apply the stylesheet from resources
+    QFile styleSheetFile(":/dark_theme.qss");
+    if (styleSheetFile.open(QFile::ReadOnly | QFile::Text)) {
+        QTextStream ts(&styleSheetFile);
+        QString styleSheet = ts.readAll();
+        a.setStyleSheet(styleSheet);
+    }
+    
     std::string path = "";
     int init_mode = 0;
     if(argc > 1){

@@ -37,4 +37,8 @@
         <file>resource/save.png</file>
         <file>resource/directory.png</file>
     </qresource>
+
+    <qresource prefix="/">
+        <file>dark_theme.qss</file>
+    </qresource>
 </RCC>

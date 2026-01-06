@@ -1,0 +1,111 @@
+
+QWidget {
+    background-color: #2b2b2b; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    selection-background-color: #5d5d5d;
+    selection-color: #ffffff;
+}
+
+QMainWindow {
+    background-color: #2b2b2b;
+}
+
+QGroupBox {
+    background-color: #3c3c3c; /* Slightly lighter dark for group boxes */
+    border: 1px solid #505050;
+    margin-top: 1ex; /* Space for the title */
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* Position at top left */
+    padding: 0 3px;
+    background-color: transparent;
+}
+
+QPushButton {
+    background-color: #505050;
+    border: 1px solid #606060;
+    color: #e0e0e0;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+QPushButton:hover {
+    background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+    background-color: #404040;
+    border-color: #303030;
+}
+
+QComboBox {
+    background-color: #3c3c3c;
+    border: 1px solid #505050;
+    color: #e0e0e0;
+    padding: 1px 18px 1px 3px;
+    border-radius: 3px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 1px;
+    border-left-color: #505050;
+    border-left-style: solid; /* just a line */
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/pic/tags/resource/arrow.svg);
+    width: 12px;
+    height: 12px;
+}
+
+QListWidget {
+    background-color: #3c3c3c;
+    border: 1px solid #505050;
+    color: #e0e0e0;
+}
+
+QListWidget::item:selected {
+    background-color: #5d5d5d;
+    color: #ffffff;
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 8px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
+    background: #404040;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #a0a0a0;
+    border: 1px solid #707070;
+    width: 18px;
+    margin: -5px 0; /* handle is placed off-center to make it appear as if it is in the middle of the groove */
+    border-radius: 9px;
+}
+
+QCheckBox {
+    color: #e0e0e0;
+}
+
+/* Styling for QLabel, specifically for DrawOnPic which inherits QLabel */
+DrawOnPic {
+    background-color: #1e1e1e; /* Even darker for the drawing area */
+    border: 1px solid #505050;
+}
+
+QStatusBar {
+    background-color: #3c3c3c;
+    color: #e0e0e0;
+    border-top: 1px solid #505050;
+}
